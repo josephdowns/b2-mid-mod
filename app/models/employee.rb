@@ -1,5 +1,5 @@
 class Employee < ApplicationRecord
   belongs_to :department
-  has_many :employeetickets
-  has_many :tickets, through: :employeetickets
+  has_many :employee_tickets
+  has_many :tickets, through: :employee_tickets
 end
