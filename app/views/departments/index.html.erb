@@ -1,0 +1,7 @@
+<h1> <% @departments.each do |department| %>
+        <%= department.name %></br>
+        <%= department.floor%></br>
+          <% department.employees.each do |employee|%>
+            <%= employee.name%></br>
+            <%end%>
+        <% end %></h1>
